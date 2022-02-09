@@ -12,6 +12,7 @@ const UserImage = styled.div`
   height: 400px;
   background-image: url(/assets/skeleton.jpg);
   background-size: cover;
+  background-repeat: no-repeat;
   box-shadow: 7px 7px 5px rgba(0,0,0,0.2);
   display: flex;
   justify-content: center;
@@ -33,8 +34,7 @@ const UserInfo = styled.div`
 
 const Title = styled.div`
   font-family: Playfair Display;
-  font-size: 24px;
-  font-weight: bold;
+  font-size: 30px;
   margin-bottom: 15px;
 `
 
