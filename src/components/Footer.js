@@ -6,18 +6,33 @@ const Container = styled.div`
   grid-template-columns: 3fr 4fr;
   gap: 25px;
   background-color: #0891B2;
-  padding: 40px;
+
+  @media (max-width: 540px) {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
 `
 
 const LeftContainer = styled.div`
   display: flex;
   flex-direction: column;
   gap: 25px;
+  padding: 40px;
 `
 
 const Image = styled.img`
   object-fit: cover;
   width: 100%;
+  padding: 40px;
+
+  @media (max-width: 991px) {
+    height: 100%;
+  }
+
+  @media (max-width: 540px) {
+    padding: 0px;
+  }
 `
 
 const Title = styled.div`
